@@ -15,6 +15,21 @@
         font-weight:normal;    
         background-color:white;  
     }
+    div, .red {
+        color:red;
+    }
+    p.red {
+        font-weight:bold;
+    }
+    div h2 {
+        font-style:italic;
+    }
+    .centre {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+    }
 </style>
 <!-- JS  -->
 <script>
@@ -33,15 +48,19 @@
         count = 0;
     }
 </script>
+<!-- HTML -->
+<div class="centre">
+    <button on:click={incrementCount}>
+        Clicked {count} {count === 1 ? 'time' : 'times'}
+    </button>
 
-<button on:click={incrementCount}>
-    Clicked {count} {count === 1 ? 'time' : 'times'}
-</button>
+    <button on:click={reset}>
+        reset
+    </button>
 
-<button on:click={reset}>
-    reset
-</button>
+    <h1>Welcome to SvelteKit {first_name}</h1>
+    <p class="red"> what </p>
+    <h2> Hello </h2>
 
-<h1>Welcome to SvelteKit {first_name}</h1>
-
-<p> Hello </p>
+</div>
+    
