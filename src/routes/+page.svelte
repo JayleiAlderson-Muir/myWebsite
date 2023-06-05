@@ -14,8 +14,6 @@
   }
 </script>
 
-<!-- CSS Styling -->
-
 <head />
 <!-- HTML -->
 
