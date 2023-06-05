@@ -1,5 +1,6 @@
 export const switchData = [
     {
+        "Image": "https://cdn.shopify.com/s/files/1/1473/3902/products/RGB_4_a40e7271-de39-4395-bf4f-3bcccdda8a2b_900x.jpg?v=1651652451",
         "Brand": "Cherry",
         "Switch Name": "MX Blue",
         "Switch Name Complete": "Cherry MX Blue",
