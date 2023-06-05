@@ -41,3 +41,7 @@ You can preview the production build with `npm run preview`.
 ## Reference Start
 
 Sam, R. (2023). Mechanical Keyboard Switch Chart & Table. TheGamingSetup. https://thegamingsetup.com/gaming-keyboard/buying-guides/keyboard-switch-chart-table
+
+CSV to JSON - CSVJSON. (n.d.). https://csvjson.com/csv2json
+
+
