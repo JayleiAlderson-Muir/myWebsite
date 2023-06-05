@@ -1,32 +1,31 @@
 <!-- JS  -->
 <script>
-  const num = 21;
-  let first_name = "Jay";
+  import {writable} from "svelte/store";
+  import {switchData} from "$lib/switchData.js";
 
-  let count = 0;
-
-  function incrementCount() {
-    count++;
-  }
-
-  function reset() {
-    count = 0;
-  }
+  const switchDataStore = writable(switchData);
 </script>
 
-<head />
 <!-- HTML -->
 
 <body>
   <div class="centre">
-    <button on:click={incrementCount}>
-      Clicked {count}
-      {count === 1 ? "time" : "times"}
-    </button>
-
-    <button on:click={reset}> reset </button>
-
-    <h1>Welcome, {first_name}</h1>
-    <p class="red">what</p>
+    <ul>
+    {#each $switchDataStore as switche}
+      <li>
+        <p>Switch Name: {switche["Switch Name Complete"]}</p>
+        <p>Type: {switche.Type}</p>
+        <p>Actuation: {switche["Actuation Force"]}</p>
+      </li>
+    {/each}
+    </ul>
   </div>
 </body>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px
+  }
+</style>
