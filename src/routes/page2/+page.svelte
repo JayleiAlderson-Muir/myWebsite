@@ -11,12 +11,12 @@
   import {switchData} from "$lib/switchData.js"
 </script>
 <body>
-  <nav>
+  <div>
     <ul>
         <li>{switchData[0]["Switch Name"]}</li>
         <li>{switchData[0]["Actuation Force"]}</li>
         <li><img src = {switchData[0].Image} alt = {switchData[0].Brand}/></li>
     </ul>
-</nav>
+</div>
 </body>
 
