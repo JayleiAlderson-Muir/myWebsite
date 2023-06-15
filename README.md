@@ -38,10 +38,3 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 
-## Reference Start
-
-Sam, R. (2023). Mechanical Keyboard Switch Chart & Table. TheGamingSetup. https://thegamingsetup.com/gaming-keyboard/buying-guides/keyboard-switch-chart-table
-
-CSV to JSON - CSVJSON. (n.d.). https://csvjson.com/csv2json
-
-
