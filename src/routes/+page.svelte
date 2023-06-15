@@ -8,7 +8,6 @@
 
 <!-- HTML -->
 
-<body>
   <div class="centre">
     <ul>
     {#each $switchDataStore as switche}
@@ -20,7 +19,6 @@
     {/each}
     </ul>
   </div>
-</body>
 
 <style>
   ul {
@@ -28,4 +26,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px
   }
+  @media (max-width: 700px) {
+    ul {
+    
+    grid-template-columns: 1fr ;
+    
+  }
+}
 </style>

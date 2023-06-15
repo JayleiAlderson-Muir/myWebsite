@@ -2,8 +2,8 @@
     import {page} from '$app/stores';
 </script>
 
-<footer>
+<footer id = "about">
     <div>
-        <p>Feet</p>
+        <p>About</p>
     </div>
 </footer>

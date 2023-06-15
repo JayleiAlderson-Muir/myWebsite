@@ -10,7 +10,7 @@
   });*/
   import {switchData} from "$lib/switchData.js"
 </script>
-<body>
+
   <div>
     <ul>
         <li>{switchData[0]["Switch Name"]}</li>
@@ -18,5 +18,5 @@
         <li><img src = {switchData[0].Image} alt = {switchData[0].Brand}/></li>
     </ul>
 </div>
-</body>
+
 

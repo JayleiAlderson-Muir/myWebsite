@@ -5,22 +5,31 @@
 <nav>
   <ul>
     <li>
-      <button class:active={$page.url.pathname === "/"}
-        ><a href="/">Home</a></button
-      >
+      <a class:active={$page.url.pathname === "/"} href="/">Home</a>
     </li>
     <li>
-      <button class:active={$page.url.pathname.includes("page2")}
-        ><a href="page2">Page2</a></button
-      >
+      <a class:active={$page.url.pathname.includes("page2")} href="page2">Page2</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
     </li>
   </ul>
 </nav>
 
 <style>
   ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     gap: 25px;
+    justify-content: center;
+  }
+
+  li{
+    padding: 0 60px;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: honeydew;
+    top: 0;
   }
 </style>
