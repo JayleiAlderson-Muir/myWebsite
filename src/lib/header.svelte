@@ -3,9 +3,4 @@
     import Navigation from './navigation.svelte';
 </script>
 
-<footer id = "about">
-    <div>
-        <p>About</p>
-    </div>
-</footer>
-
+<Navigation/>

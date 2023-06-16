@@ -1,10 +1,10 @@
 <script>
     import "../style.css";
-    import Navigation from "$lib/navigation.svelte";
+    import Header from "$lib/header.svelte";
     import Footer from "$lib/footer.svelte";
 </script>
 
-<Navigation/>
+<Header/>
 
 <main>
     <slot/>
