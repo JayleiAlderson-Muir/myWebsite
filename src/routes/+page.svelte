@@ -12,9 +12,9 @@
   <ul>
     {#each $switchDataStore as switche}
       <li>
-        <p>Switch Name: {switche["Switch Name Complete"]}</p>
+        <p>Switch Name: {switche.CompleteName}</p>
         <p>Type: {switche.Type}</p>
-        <p>Actuation: {switche["Actuation Force"]}</p>
+        <p>Actuation: {switche.ActuationForce}</p>
         <img src={switche.Image} alt="non" />
       </li>
     {/each}

@@ -15,9 +15,9 @@
 
   <div>
     <ul>
-        <li>{switchData[1]["Switch Name"]}</li>
-        <li>{switchData[1]["Actuation Force"]}</li>
-        <li><img src = {switchData[1].Image} alt = {switchData[1].Brand}/></li>
+      <li>{switchData[0].Name}</li>
+      <li>{switchData[0].ActuationForce}</li>
+      <li><img src = {switchData[0].Image} alt = {switchData[0].Brand}/></li>
     </ul>
 </div>
 
