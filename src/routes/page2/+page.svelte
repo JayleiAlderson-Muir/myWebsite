@@ -8,14 +8,16 @@
     const response = await get();
     html = response.body;
   });*/
-  import {switchData} from "$lib/switchData.js"
+  import {switchData} from "$lib/switchData.js";
+  let keys = Object.keys(switchData[0]);
+  console.log(keys);
 </script>
 
   <div>
     <ul>
-        <li>{switchData[0]["Switch Name"]}</li>
-        <li>{switchData[0]["Actuation Force"]}</li>
-        <li><img src = {switchData[0].Image} alt = {switchData[0].Brand}/></li>
+        <li>{switchData[1]["Switch Name"]}</li>
+        <li>{switchData[1]["Actuation Force"]}</li>
+        <li><img src = {switchData[1].Image} alt = {switchData[1].Brand}/></li>
     </ul>
 </div>
 

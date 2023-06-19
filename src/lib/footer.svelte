@@ -9,3 +9,11 @@
     </div>
 </footer>
 
+<style>
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 75%;
+    }
+</style>
