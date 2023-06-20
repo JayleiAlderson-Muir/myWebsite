@@ -35,3 +35,4 @@ https://svelte.dev/repl/8b2264e66d9a456abeb5f2b9322605f7?version=3.59.1
 
 https://www.npmjs.com/package/svelte-table
 
+https://uiverse.io/all
