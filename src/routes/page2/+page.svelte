@@ -51,8 +51,7 @@
       bind:sortOrder
       classNameTable={['table table-striped']}
       classNameThead={['table-primary']}
-      classNameSelect={['custom-select']}
-      classNameRowSelected={'test'} />
+      classNameSelect={['custom-select']}/>
 </div>
 
 
