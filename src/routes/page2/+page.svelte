@@ -27,20 +27,7 @@
     {key: "StemType", title: "Stem Compatibility", value: v => v.StemType, sortable: true,},
     {key: "PrebuiltAvailability", title: "Available in prebuilt", value: v => v.PrebuiltAvailability, sortable: true,}
   ]
-  function sortList(key) {
-    switchData.sort((a,b) => {
-      if (typeof a[key] == "string" && typeof b[key] == "string")
-        if (a[key].toLowerCase() > b[key].toLowerCase())
-          return -1;
-        else return 1;
-      else 
-        if (a[key] > b[key])
-          return -1;
-        else return 1;
-    })
-  }
-  sortList("ActuationForce")
-  console.log(switchData)
+  
 </script>
 
   <div>

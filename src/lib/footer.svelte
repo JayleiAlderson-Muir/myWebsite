@@ -1,9 +1,10 @@
 <script>
   import { page } from "$app/stores";
   import Navigation from "./navigation.svelte";
-  let url = "https://reqres.in";
+  const BASE_URL = "https://api.unsplash.com/";
+  const AUTHORIZATION = "?client_id=Ca5OEr6brF6hFhF--FoVw0f_UnIGPP1CtPdnrjmp9Mo";
   fetch(url)
-    .then((response) => response.text())
+    .then((response) => response.json())
     .then((data) => {
       console.log(data);
     });
