@@ -1,13 +1,4 @@
 <script>
-  /*import { get } from "../../routes/api/scrape.js";
-  import { onMount } from "svelte";
-
-  let html = '';
-
-  onMount(async () => {
-    const response = await get();
-    html = response.body;
-  });*/
   import SvelteTable from "svelte-table";
 
   import {switchData} from "$lib/switchData.js";

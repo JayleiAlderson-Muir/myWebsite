@@ -20,10 +20,6 @@ ul {
     list-style: none;
 }
 
-.test {
-    background-color: green;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
