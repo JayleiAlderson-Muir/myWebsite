@@ -24,13 +24,22 @@ export const brandImages = [
         "https://cdn.shopify.com/s/files/1/1473/3902/products/3_74665e23-f096-4a67-aadd-6a19e7d4e323.jpg?v=1644994865"
     ], 
     [
-
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/2_16ffcb1e-bf66-4459-a709-4ffaca7d44aa.jpg?v=1648615873",
+        "https://zealpc.net/cdn/shop/products/Pearlio60g_2048x.jpg?v=1640493778",
+        "https://zealpc.net/cdn/shop/products/CrystalTactileSwitch_2048x.jpg?v=1640490153",
+        "https://zealpc.net/cdn/shop/products/Clickiez60g_2048x.jpg?v=1640482842"
     ], 
     [
-
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_468db451-28fb-496f-a2ea-f04bdc2ae26d.jpg?v=1668057312",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_2c6f15de-6510-4679-ac52-86375e0fe11f.jpg?v=1650607772",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_6e2d5339-eb22-4ef8-bead-60f81f78ce8b.jpg?v=1614072983",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_d581eb7f-a7e6-43ec-9ecb-3fbd4e04276d.jpg?v=1646015875"
     ], 
     [
-
+        "https://i.imgur.com/Nq45FJD.png",
+        "https://i.imgur.com/lQOspQB.png",
+        "https://i.imgur.com/TgeuwHx.png",
+        "https://i.imgur.com/TX22SsK.png"
     ]
 ]
 
