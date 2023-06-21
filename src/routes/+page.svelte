@@ -15,7 +15,7 @@
         <p>Switch Name: {switche.CompleteName}</p>
         <p>Type: {switche.Type}</p>
         <p>Actuation: {switche.ActuationForce}</p>
-        <img src={switche.Image} alt="non" />
+        <img src={switche.Image} alt="mechanical keyboard switch" />
       </li>
     {/each}
   </ul>
