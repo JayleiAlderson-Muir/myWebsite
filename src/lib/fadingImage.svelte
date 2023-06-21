@@ -46,7 +46,7 @@
 <style>
   img {
     object-fit: cover;
-    object-position: left var(--image-pos);
+    object-position: var(--image-pos) var(--image-pos);
     overflow: clip;
     height: 100%;
     width: 100%;
