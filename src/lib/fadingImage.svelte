@@ -1,10 +1,10 @@
 <script>
   import { tweened } from "svelte/motion";
   
-  let IMAGE_POS = tweened(0, {
+  let imagePosition = tweened(0, {
     duration: 2500
   })
-  //let IMAGE_POS = 0;
+  //let imagePosition = 0;
   const BASE_URL = "https://api.unsplash.com/search/photos";
   const AUTHORIZATION = "client_id=Ca5OEr6brF6hFhF--FoVw0f_UnIGPP1CtPdnrjmp9Mo";
   let keyboardData;
@@ -26,10 +26,10 @@
     }
     keyboardData = rawData.results[index++];
     keyboardImage = keyboardData.urls.raw;
-    if ($IMAGE_POS == 0){
-        IMAGE_POS.set(100);
+    if ($imagePosition == 0){
+        imagePosition.set(100);
     } else {
-        IMAGE_POS.set(0);
+        imagePosition.set(0);
     }
     
     
@@ -39,7 +39,7 @@
 
 <section>
   {#if keyboardImage}
-    <img src={keyboardImage} alt="keyboard" style="--image-pos: {$IMAGE_POS}px"/>
+    <img src={keyboardImage} alt="keyboard" style="--image-pos: {$imagePosition}px"/>
   {/if}
 </section>
 
