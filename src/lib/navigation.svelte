@@ -19,18 +19,20 @@
 <style>
   ul {
     display: flex;
-    gap: 25px;
-    justify-content: center;
+    gap: 10vw;
+    justify-content: space-evenly;
+    padding: 0 20vw;
   }
   a {
     text-decoration: none;
     color: inherit;
+    text-align: center;
   }
   a:hover {
     text-decoration: underline;
   }
   li{
-    padding: 0 60px;
+    
   }
   nav {
     position: fixed;
