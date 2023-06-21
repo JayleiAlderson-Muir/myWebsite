@@ -39,4 +39,4 @@ npm: svelte-table. (n.d.). Npm. https://www.npmjs.com/package/svelte-table
 
 2256 UI elements made with CSS. (n.d.). https://uiverse.io/all
 
-https://developer.mozilla.org/en-US/
+MDN Web Docs. (n.d.). https://developer.mozilla.org/en-US/
