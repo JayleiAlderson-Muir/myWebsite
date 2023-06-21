@@ -1,18 +1,8 @@
 <script>
   import { tweened } from "svelte/motion";
-  
-  let sectionHeight = 0;
-  let sectionWidth = 0;
 
-  let imageHeight = 0;
-  let imageWidth = 0;
-
-  let imagePositionX = tweened(500, {
-    duration: 2500
-  })
-  let imagePositionY = tweened(500, {
-    duration: 2500
-  })
+  let imagePositionX;
+  let imagePositionY;
   //let imagePosition = 0;
   const BASE_URL = "https://api.unsplash.com/search/photos";
   const AUTHORIZATION = "client_id=Ca5OEr6brF6hFhF--FoVw0f_UnIGPP1CtPdnrjmp9Mo";
@@ -25,44 +15,48 @@
     .then((data) => {
       //console.log(data.results[0].urls.raw);
       rawData = data;
-      setInterval(changeImage, 5000);
+      setInterval(changeImage, 5100);
     });
 
   function changeImage() {
-    
-    if (index >= rawData.results.length - 1) {
-      index = 0;
+    if (!imagePositionX) {
+      imagePositionX = tweened(20, {
+        duration: 5000,
+      });
+      imagePositionY = tweened(20, {
+        duration: 5000,
+      });
     }
-    keyboardData = rawData.results[index++];
-    keyboardImage = keyboardData.urls.raw;
-    if ($imagePositionX == 500){
-        imagePositionX.set(imageWidth - sectionWidth);
-        imagePositionY.set(imageHeight - sectionHeight);
+    if ($imagePositionY == 20) {
+      if (index >= rawData.results.length - 1) {
+        index = 0;
+      }
+      keyboardData = rawData.results[index++];
+      keyboardImage = keyboardData.urls.raw;
+      imagePositionX.set(80);
+      imagePositionY.set(80);
     } else {
-        imagePositionX.set(500);
-        imagePositionY.set(500);
+      imagePositionX.set(20);
+      imagePositionY.set(20);
     }
-    
-    
-  }
-  function imageLoaded(element){
-    imageWidth = element.target.naturalWidth;
-    imageHeight = element.target.naturalHeight;
-    console.log(`image w: ${imageWidth}\n section w: ${sectionWidth}`)
   }
 </script>
 
-<section bind:clientHeight={sectionHeight} bind:clientWidth={sectionWidth}>
+<section>
   {#if keyboardImage}
-    <img on:load={imageLoaded} src={keyboardImage} alt="keyboard" style="--image-pos-x: {-1 * $imagePositionX}px;--image-pos-y: {-1 * $imagePositionY}px"/>
+    <img
+      src={keyboardImage}
+      alt="keyboard"
+      style="--image-pos-x: {$imagePositionX}%;--image-pos-y: {$imagePositionY}%"
+    />
   {/if}
 </section>
 
 <style>
   img {
-    object-fit: none;
+    object-fit: cover;
     object-position: var(--image-pos-x) var(--image-pos-y);
-    overflow: visible;
+    overflow: hidden;
     height: 100%;
     width: 100%;
   }
