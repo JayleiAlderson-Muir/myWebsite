@@ -2,11 +2,37 @@ export const brandImages = [
     [
         "https://cdn.shopify.com/s/files/1/1473/3902/files/1_2d2e4da3-b76c-4757-8de7-6d2e345c5d9f.jpg?v=1685407358", 
         "https://cdn.shopify.com/s/files/1/1473/3902/products/1_3503b6ff-48f6-42be-a7cd-8e5049a15ea7.jpg?v=1678780368",
-        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_66b4db7d-a8ac-46b7-8686-aff540843f89.jpg?v=1677486850"
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_66b4db7d-a8ac-46b7-8686-aff540843f89.jpg?v=1677486850",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_ba6c1fe1-bc5b-474e-a729-f79e1c1b4489.jpg?v=1673254274",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_42198621-697d-40a3-9d16-3026f7479610.jpg?v=1652148845",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_7144fd56-6aa7-4714-9511-cb7886704445.jpg?v=1652148308",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_78690d0c-53ee-4b7e-876e-e51fe57ca2aa.jpg?v=1652147867",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_29738ab6-6492-4185-8529-05fd4d09e26c.jpg?v=1652145420"
+    ], 
+    [
+        "https://cdn.shopify.com/s/files/1/1473/3902/files/1_40f16107-1670-45b2-b32f-c2891f500081.jpg?v=1685940229",
+        "https://cdn.shopify.com/s/files/1/1473/3902/files/1_ef3fe437-391c-483d-8637-ca9e34c9507f.jpg?v=1685781160",
+        "https://cdn.shopify.com/s/files/1/1473/3902/files/1_ec4ec3fa-1212-4d63-a763-8de69f979054.jpg?v=1685686460",
+        "https://cdn.shopify.com/s/files/1/1473/3902/files/1_00425f2c-b450-45f4-a741-2cf1d76059a9.jpg?v=1685608911",
+        "https://cdn.shopify.com/s/files/1/1473/3902/files/1_02800de1-84c1-407f-be68-b19e6cc2988b.jpg?v=1685428666",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_26463b7c-7a99-4c84-bb03-83d420625cae.jpg?v=1646033760",
+    ], 
+    [
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_5baca162-14b4-4508-9c21-36eb1b478153.jpg?v=1652660968",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_3a3097be-a552-44ce-9537-5a0f1074fb42.jpg?v=1605859490",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_d35f64ae-625b-45de-b8bb-55dbf132eaf7.jpg?v=1653556327",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/3_74665e23-f096-4a67-aadd-6a19e7d4e323.jpg?v=1644994865"
     ], 
     [
 
-    ], [], [], [], []]
+    ], 
+    [
+
+    ], 
+    [
+
+    ]
+]
 
 export const switchData = [
     {

@@ -6,7 +6,7 @@
   
   const switchDataStore = writable(switchData);
 
-  let brandList = ["Cherry", "Gateron", "Everglide", "Kailh", "Outemu", "ZealPC"];
+  let brandList = ["Cherry", "Gateron", "Kailh", "Everglide", "Outemu", "ZealPC"];
   
 </script>
 
