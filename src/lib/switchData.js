@@ -1,3 +1,13 @@
+export const brandImages = [
+    [
+        "https://cdn.shopify.com/s/files/1/1473/3902/files/1_2d2e4da3-b76c-4757-8de7-6d2e345c5d9f.jpg?v=1685407358", 
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_3503b6ff-48f6-42be-a7cd-8e5049a15ea7.jpg?v=1678780368",
+        "https://cdn.shopify.com/s/files/1/1473/3902/products/1_66b4db7d-a8ac-46b7-8686-aff540843f89.jpg?v=1677486850"
+    ], 
+    [
+
+    ], [], [], [], []]
+
 export const switchData = [
     {
         "Brand": "Cherry",
