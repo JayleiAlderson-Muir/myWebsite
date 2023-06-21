@@ -22,7 +22,13 @@
     gap: 25px;
     justify-content: center;
   }
-
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
   li{
     padding: 0 60px;
   }
@@ -32,4 +38,5 @@
     background-color: honeydew;
     top: 0;
   }
+
 </style>

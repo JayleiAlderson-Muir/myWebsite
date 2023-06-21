@@ -6,7 +6,7 @@
 
 <footer id="about">
   <div>
-    <p>About</p>
+    <h3>About</h3>
     <FadingImage/>
   </div>
 </footer>
@@ -14,8 +14,8 @@
 <style>
   footer {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 75%;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
   }
 </style>
