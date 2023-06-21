@@ -32,8 +32,13 @@
 
 <style>
     img {
-        width: 100vw;
-        
         object-fit: cover;
+        overflow: clip;
+        height: 100%;
+        width: 100%;
+    }
+    section {
+        width: 100vw;
+        height: 50vh;
     }
 </style>
