@@ -8,7 +8,7 @@
       <a class:active={$page.url.pathname === "/"} href="/">Home</a>
     </li>
     <li>
-      <a class:active={$page.url.pathname.includes("page2")} href="page2">Table</a>
+      <a class:active={$page.url.pathname.includes("page2")} href="table">Table</a>
     </li>
     <li>
       <a href="#about">About</a>
