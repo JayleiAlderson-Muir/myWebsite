@@ -1,10 +1,16 @@
 <script>
   import { tweened } from "svelte/motion";
   
-  let imagePositionX = tweened(0, {
+  let sectionHeight = 0;
+  let sectionWidth = 0;
+
+  let imageHeight = 0;
+  let imageWidth = 0;
+
+  let imagePositionX = tweened(500, {
     duration: 2500
   })
-  let imagePositionY = tweened(0, {
+  let imagePositionY = tweened(500, {
     duration: 2500
   })
   //let imagePosition = 0;
@@ -29,30 +35,34 @@
     }
     keyboardData = rawData.results[index++];
     keyboardImage = keyboardData.urls.raw;
-    if ($imagePositionX == 0){
-        imagePositionX.set(10);
-        imagePositionY.set(100);
+    if ($imagePositionX == 500){
+        imagePositionX.set(imageWidth - sectionWidth);
+        imagePositionY.set(imageHeight - sectionHeight);
     } else {
-        imagePositionX.set(0);
-        imagePositionY.set(0);
+        imagePositionX.set(500);
+        imagePositionY.set(500);
     }
     
     
   }
-  console.log(keyboardImage);
+  function imageLoaded(element){
+    imageWidth = element.target.naturalWidth;
+    imageHeight = element.target.naturalHeight;
+    console.log(`image w: ${imageWidth}\n section w: ${sectionWidth}`)
+  }
 </script>
 
-<section>
+<section bind:clientHeight={sectionHeight} bind:clientWidth={sectionWidth}>
   {#if keyboardImage}
-    <img src={keyboardImage} alt="keyboard" style="--image-pos-x: {-1 * $imagePositionX}px;--image-pos-y: {-1 * $imagePositionY}px"/>
+    <img on:load={imageLoaded} src={keyboardImage} alt="keyboard" style="--image-pos-x: {-1 * $imagePositionX}px;--image-pos-y: {-1 * $imagePositionY}px"/>
   {/if}
 </section>
 
 <style>
   img {
-    object-fit: cover;
+    object-fit: none;
     object-position: var(--image-pos-x) var(--image-pos-y);
-    overflow: hidden;
+    overflow: visible;
     height: 100%;
     width: 100%;
   }
