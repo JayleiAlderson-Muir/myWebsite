@@ -33,19 +33,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
+    justify-items: center;
+    row-gap: 5rem;
   }
-  @media (max-width: 80rem) {
+  @media (max-width: 100rem) {
     ul {
       grid-template-columns: 1fr 1fr;
     }
   }
-  @media (max-width: 60rem) {
+  @media (max-width: 70rem) {
     ul {
       grid-template-columns: 1fr;
     }
   }
   .centre {
     margin: 0 auto;
-    width: 90%;
+    width: 75%;
   }
 </style>
