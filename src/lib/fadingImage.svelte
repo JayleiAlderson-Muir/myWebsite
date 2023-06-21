@@ -1,7 +1,10 @@
 <script>
   import { tweened } from "svelte/motion";
   
-  let imagePosition = tweened(0, {
+  let imagePositionX = tweened(0, {
+    duration: 2500
+  })
+  let imagePositionY = tweened(0, {
     duration: 2500
   })
   //let imagePosition = 0;
@@ -26,10 +29,12 @@
     }
     keyboardData = rawData.results[index++];
     keyboardImage = keyboardData.urls.raw;
-    if ($imagePosition == 0){
-        imagePosition.set(100);
+    if ($imagePositionX == 0){
+        imagePositionX.set(10);
+        imagePositionY.set(100);
     } else {
-        imagePosition.set(0);
+        imagePositionX.set(0);
+        imagePositionY.set(0);
     }
     
     
@@ -39,15 +44,15 @@
 
 <section>
   {#if keyboardImage}
-    <img src={keyboardImage} alt="keyboard" style="--image-pos: {$imagePosition}px"/>
+    <img src={keyboardImage} alt="keyboard" style="--image-pos-x: {-1 * $imagePositionX}px;--image-pos-y: {-1 * $imagePositionY}px"/>
   {/if}
 </section>
 
 <style>
   img {
     object-fit: cover;
-    object-position: var(--image-pos) var(--image-pos);
-    overflow: clip;
+    object-position: var(--image-pos-x) var(--image-pos-y);
+    overflow: hidden;
     height: 100%;
     width: 100%;
   }
