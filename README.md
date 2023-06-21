@@ -31,10 +31,12 @@ Sam, R. (2023). Mechanical Keyboard Switch Chart & Table. TheGamingSetup. https:
 
 CSV to JSON - CSVJSON. (n.d.). https://csvjson.com/csv2json
 
-https://svelte.dev/repl/8b2264e66d9a456abeb5f2b9322605f7?version=3.59.1
+W3Schools Online Web Tutorials. (n.d.). https://www.w3schools.com/
 
-https://www.npmjs.com/package/svelte-table
+SvelteTable example 4 - table fix • REPL • Svelte. (n.d.). https://svelte.dev/repl/8b2264e66d9a456abeb5f2b9322605f7?version=3.59.1
 
-https://uiverse.io/all
+npm: svelte-table. (n.d.). Npm. https://www.npmjs.com/package/svelte-table
+
+2256 UI elements made with CSS. (n.d.). https://uiverse.io/all
 
 https://developer.mozilla.org/en-US/
