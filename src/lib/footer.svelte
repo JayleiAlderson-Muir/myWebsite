@@ -17,9 +17,9 @@
     flex-direction: column;
     text-align: center;
     margin: 0;
-    background-color: #4d7c8a;
+    background-color: var(--secondary-colour);
   }
   h3 {
-    color: white;
+    color: var(--text-colour);
   }
 </style>

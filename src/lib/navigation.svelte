@@ -25,7 +25,7 @@
   }
   a {
     text-decoration: none;
-    color: white;
+    color: var(--text-colour);
     text-align: center;
     font-weight: bold;
   }
@@ -36,7 +36,7 @@
   nav {
     position: fixed;
     width: 100%;
-    background-color: #4d7c8a;
+    background-color: var(--secondary-colour);
     top: 0;
   }
 
