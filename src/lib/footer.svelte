@@ -17,5 +17,9 @@
     flex-direction: column;
     text-align: center;
     margin: 0;
+    background-color: #4d7c8a;
+  }
+  h3 {
+    color: white;
   }
 </style>

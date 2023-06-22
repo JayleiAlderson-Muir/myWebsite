@@ -27,13 +27,12 @@
     text-decoration: none;
     color: white;
     text-align: center;
+    font-weight: bold;
   }
   a:hover {
     text-decoration: underline;
   }
-  li{
-    
-  }
+
   nav {
     position: fixed;
     width: 100%;
