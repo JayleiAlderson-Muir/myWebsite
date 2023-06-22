@@ -20,7 +20,7 @@
           duration: 20000,
         });
         changeImage();
-        setInterval(changeImage, 21000); //image change every 21 seconds
+        setInterval(changeImage, 21000); //check image position every 21 seconds
       });
   });
 
