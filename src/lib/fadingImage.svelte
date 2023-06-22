@@ -12,6 +12,8 @@
     .then((response) => response.json())
     .then((data) => {
       rawData = data;
+      keyboardImage = data.results[index].urls.raw;
+      changeImage();
       setInterval(changeImage, 20500);
     });
 
