@@ -1,13 +1,30 @@
 <script>
   export let brand;
   export let image_urls = [];
-  let index = 0;
-  let hoverFlag = false;
+  export let brandIndex;
+  let imageIndex = 0;
+  var cycleInterval;
+  function cycleImage() {
+    if (imageIndex >= image_urls[brandIndex].length - 1) {
+      imageIndex = 0;
+    } else {
+      imageIndex++;
+    }
+  }
 </script>
 
 <div>
   <a href="/table#{brand}">
-    <img class:hoverFlag on:mouseenter={()=>{}} src={image_urls[index]} alt="brand switches"/>
+    <img
+      on:mouseenter={() => {
+        cycleInterval = setInterval(cycleImage, 1000);
+      }}
+      on:mouseleave={() => {
+        clearInterval(cycleInterval);
+      }}
+      src={image_urls[brandIndex][imageIndex]}
+      alt="brand switches"
+    />
   </a>
   <p>{brand}</p>
 </div>

@@ -13,10 +13,10 @@
 
 <div class="centre">
   <ul>
-    {#each brandList as brand, index}
+    {#each brandList as brand, brandIndex}
       <li>
         <div class="brand-image">
-          <BrandCard {brand} image_urls={brandImages[index]} />
+          <BrandCard brand={brand} image_urls={brandImages} brandIndex={brandIndex}/>
         </div>
       </li>
     {/each}
