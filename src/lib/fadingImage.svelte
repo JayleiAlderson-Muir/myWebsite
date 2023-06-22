@@ -1,5 +1,6 @@
 <script>
   import { tweened } from "svelte/motion";
+  import { onMount } from "svelte";
 
   let imagePositionY;
   const BASE_URL = "https://api.unsplash.com/search/photos";
@@ -8,26 +9,28 @@
   let keyboardImage;
   let rawData;
   let index = 0;
-  fetch(`${BASE_URL}?page=1&query=mechanical-keyboard&${AUTHORIZATION}`)
-    .then((response) => response.json())
-    .then((data) => {
-      rawData = data;
-      keyboardImage = data.results[index].urls.raw;
-      changeImage();
-      setInterval(changeImage, 20500);
-    });
+  onMount(async () => {
+    fetch(`${BASE_URL}?page=1&query=mechanical-keyboard&${AUTHORIZATION}`)
+      .then((response) => response.json())
+      .then((data) => {
+        rawData = data;
+        keyboardImage = data.results[index].urls.raw;
+        imagePositionY = tweened(20, {
+          duration: 20000,
+        });
+        changeImage();
+        setInterval(changeImage, 21000);
+      });
+  });
 
   function changeImage() {
-    if (!imagePositionY) {
-      imagePositionY = tweened(20, {
-        duration: 20000,
-      });
-    }
     if ($imagePositionY == 20) {
       if (index >= rawData.results.length - 1) {
         index = 0;
+      } else {
+        index++;
       }
-      keyboardData = rawData.results[index++];
+      keyboardData = rawData.results[index];
       keyboardImage = keyboardData.urls.raw;
       imagePositionY.set(80);
     } else {
@@ -37,13 +40,13 @@
 </script>
 
 <section>
-  {#if keyboardImage}
+  {#await keyboardImage then}
     <img
       src={keyboardImage}
       alt="keyboard"
       style="--image-pos-y: {$imagePositionY}%"
     />
-  {/if}
+  {/await}
 </section>
 
 <style>
