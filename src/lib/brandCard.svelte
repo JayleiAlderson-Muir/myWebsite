@@ -17,13 +17,14 @@
   <a href="/table#{brand}">
     <img
       on:mouseenter={() => {
+        cycleImage(); //cycling img immediately clarity for user
         cycleInterval = setInterval(cycleImage, 1000);
       }}
       on:mouseleave={() => {
         clearInterval(cycleInterval);
       }}
       src={image_urls[brandIndex][imageIndex]}
-      alt="brand switches"
+      alt="{brand} switches"
     />
   </a>
   <p>{brand}</p>
