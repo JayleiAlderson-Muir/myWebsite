@@ -3,17 +3,11 @@
   export let image_urls = [];
   let index = 0;
   let hoverFlag = false;
-  function cycleImage(brandName) {
-    if (hoverFlag) {
-
-    }
-  }
-
 </script>
 
 <div>
   <a href="/table#{brand}">
-    <img class:hoverFlag on:mouseenter={()=>{console.log(`enter${brand}`)}} src={image_urls[index]} alt="brand switches"/>
+    <img class:hoverFlag on:mouseenter={()=>{}} src={image_urls[index]} alt="brand switches"/>
   </a>
   <p>{brand}</p>
 </div>
