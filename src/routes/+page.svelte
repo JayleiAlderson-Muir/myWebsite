@@ -10,7 +10,7 @@
 </script>
 
 <!-- HTML -->
-
+<!--iterate through brand array and parse necessary info to component to handle creation-->
 <div class="centre">
   <ul>
     {#each brandList as brand, brandIndex}

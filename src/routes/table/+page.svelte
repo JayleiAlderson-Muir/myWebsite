@@ -4,6 +4,7 @@
   import { switchData } from "$lib/switchData.js";
   let sortBy = "Brand";
   let sortOrder = 1;
+  //declate table data and structure
   const rows = switchData;
   const columns = [
     {
@@ -42,7 +43,7 @@
     },
   ];
 </script>
-
+<!--create svelte table based on props, attributes-->
 <div class="table">
   <SvelteTable
     {columns}

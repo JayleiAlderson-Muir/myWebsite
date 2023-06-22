@@ -3,7 +3,7 @@
   import Navigation from "./navigation.svelte";
   import FadingImage from "./fadingImage.svelte";
 </script>
-
+<!--TODO-->
 <footer id="about">
   <div>
     <h3>About</h3>

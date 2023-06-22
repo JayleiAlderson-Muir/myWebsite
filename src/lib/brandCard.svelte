@@ -1,9 +1,14 @@
 <script>
+  //props to be called
   export let brand;
   export let image_urls = [];
   export let brandIndex;
+  //init
   let imageIndex = 0;
   var cycleInterval;
+  //change the displayed image
+  //this is based on information from parent 
+  //data is stored in switchData.js
   function cycleImage() {
     if (imageIndex >= image_urls[brandIndex].length - 1) {
       imageIndex = 0;
@@ -13,17 +18,18 @@
   }
 </script>
 
+<!--displays based on props-->
 <div>
   <a href="/table#{brand}">
     <img
       on:mouseenter={() => {
-        cycleImage(); //cycling img immediately clarity for user
-        cycleInterval = setInterval(cycleImage, 1000);
+        cycleImage(); //cycling img immediately means clarity for user
+        cycleInterval = setInterval(cycleImage, 1000); 
       }}
       on:mouseleave={() => {
-        clearInterval(cycleInterval);
+        clearInterval(cycleInterval); //will stop cycling when not hovering
       }}
-      src={image_urls[brandIndex][imageIndex]}
+      src={image_urls[brandIndex][imageIndex]} 
       alt="{brand} switches"
     />
   </a>
@@ -40,7 +46,7 @@
     border-radius: 10px;
   }
   img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px #4d7c8a;
     max-width: 21rem;
   }
   div {

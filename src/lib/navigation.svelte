@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
 </script>
-
+<!--navigate to other pages and/or components-->
 <nav>
   <ul>
     <li>

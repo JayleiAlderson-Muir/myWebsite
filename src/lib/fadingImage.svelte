@@ -9,24 +9,25 @@
   let keyboardImage;
   let rawData;
   let index = 0;
+  //fetch images for footer and initialise variables
   onMount(async () => {
     fetch(`${BASE_URL}?page=1&query=mechanical-keyboard&${AUTHORIZATION}`)
       .then((response) => response.json())
       .then((data) => {
         rawData = data;
         keyboardImage = data.results[index].urls.raw;
-        imagePositionY = tweened(20, {
+        imagePositionY = tweened(20, { //value will change gradually over 20 seconds
           duration: 20000,
         });
         changeImage();
-        setInterval(changeImage, 21000);
+        setInterval(changeImage, 21000); //image change every 21 seconds
       });
   });
 
   function changeImage() {
     if ($imagePositionY == 20) {
-      if (index >= rawData.results.length - 1) {
-        index = 0;
+      if (index >= rawData.results.length - 1) {  //checks against the stored data from our fetch
+        index = 0;                                //if we run out of images we loop back to the first
       } else {
         index++;
       }
@@ -38,9 +39,9 @@
     }
   }
 </script>
-
+<!--element is loaded when fetch is complete -->
 <section>
-  {#await keyboardImage then}
+  {#await keyboardImage then} 
     <img
       src={keyboardImage}
       alt="keyboard"
