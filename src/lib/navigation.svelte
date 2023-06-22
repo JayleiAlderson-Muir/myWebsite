@@ -25,7 +25,7 @@
   }
   a {
     text-decoration: none;
-    color: inherit;
+    color: white;
     text-align: center;
   }
   a:hover {
@@ -37,7 +37,7 @@
   nav {
     position: fixed;
     width: 100%;
-    background-color: honeydew;
+    background-color: #4d7c8a;
     top: 0;
   }
 

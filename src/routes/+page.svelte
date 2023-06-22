@@ -6,14 +6,7 @@
 
   const switchDataStore = writable(switchData);
 
-  let brandList = [
-    "Cherry",
-    "Gateron",
-    "Kailh",
-    "ZealPC",
-    "TTC",
-    "Outemu"
-  ];
+  let brandList = ["Cherry", "Gateron", "Kailh", "ZealPC", "TTC", "Outemu"];
 </script>
 
 <!-- HTML -->
@@ -22,7 +15,9 @@
   <ul>
     {#each brandList as brand, index}
       <li>
-        <BrandCard {brand} image_urls={brandImages[index]} />
+        <div class="brand-image">
+          <BrandCard {brand} image_urls={brandImages[index]} />
+        </div>
       </li>
     {/each}
   </ul>
@@ -33,6 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
+    padding-bottom: 5rem;
     justify-items: center;
     row-gap: 5rem;
   }
