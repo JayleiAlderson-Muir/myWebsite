@@ -35,6 +35,14 @@ The CSS doesn't seem to be dynamic and it's easy to break the look of the page b
 
 This is a great beginner guide. I think I want to do something similar but make it more expansive. 
 
+# Known Issues
+- Table information shows in unstyled format briefly when refreshing the page in web browser
+- Does not scroll correctly to footer element when on the page '/filtered#about' when refreshing
+  - note: it is only possible to do this by navigating to a filtered page, then the the about section
+  - Does scroll to footer element, but due to the redirect, the movement is not smooth or direct
+- SvelteTable has inherit formatting issues that should have been addressed
+- FadingImage component can go out-of-sync and pause for the duration of the setInterval method used
+
 
 ## Reference Start
 
