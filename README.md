@@ -1,6 +1,6 @@
 ## Running this Project
 
-Once you've cloned the project and installed dependencies with `npm install` and `npm install -save svelte-table`, start a development server:
+Once you've cloned this project and installed dependencies with `npm install` and `npm install -save svelte-table`, start a development server:
 
 ```bash
 npm run dev
