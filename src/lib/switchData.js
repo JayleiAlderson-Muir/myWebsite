@@ -2658,3 +2658,40 @@ export const switchData = [
         "Notes": ""
     }
 ]
+
+export const columns = [
+    {
+      key: "Brand",
+      title: "Brand",
+      value: (v) => v.Brand,
+      sortable: true,
+    },
+    {
+      key: "Name",
+      title: "Switch Name",
+      value: (v) => v.Name,
+      sortable: true,
+    },
+    {
+      key: "Type",
+      title: "Type",
+      value: (v) => v.Type,
+    },
+    {
+      key: "ActuationForce",
+      title: "Actuation (g)",
+      value: (v) => v.ActuationForce,
+      sortable: true,
+    },
+    {
+      key: "BottomOutForce",
+      title: "Bottom Out (g)",
+      value: (v) => v.BottomOutForce,
+      sortable: true,
+    },
+    {
+      key: "StemType",
+      title: "Stem Compatibility",
+      value: (v) => v.StemType,
+    },
+  ]

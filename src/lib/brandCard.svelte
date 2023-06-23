@@ -20,7 +20,7 @@
 
 <!--displays based on props-->
 <div>
-  <a href="/table#{brand}">
+  <a href="/filtered#{brand}">
     <img
       on:mouseenter={() => {
         cycleImage(); //cycling img immediately means clarity for user
