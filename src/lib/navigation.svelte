@@ -1,6 +1,9 @@
 <script>
   import { page } from "$app/stores";
+  import Update from "$lib/update.svelte";
+  let update;
 </script>
+<Update bind:this={update} />
 <!--navigate to other pages and/or components-->
 <nav>
   <ul>
@@ -8,7 +11,7 @@
       <a class:active={$page.url.pathname === "/"} href="/">Home</a>
     </li>
     <li>
-      <a class:active={$page.url.pathname.includes("page2")} href="table">Table</a>
+      <a on:click={() => update.updateTable()} class:active={$page.url.pathname.includes("table")} href="table">Table</a>
     </li>
     <li>
       <a href="#about">About</a>

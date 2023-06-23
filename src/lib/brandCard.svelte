@@ -38,21 +38,21 @@
 
 <style>
   a {
-    width: inherit;
+    max-width: inherit;
   }
   img {
-    width: 20rem;
+    max-width: 20rem;
     object-fit: cover;
     border-radius: 10px;
-    transition: width 0.375s;
+    transition: max-width 0.375s;
   }
   img:hover {
     box-shadow: 0 0 2px 1px var(--secondary-colour);
-    width: 21rem;
+    max-width: 21rem;
   }
   div {
-    width: 21rem;
-    height: 21rem;
+    max-width: 21rem;
+    max-height: 21rem;
   }
   p {
     text-align: center;

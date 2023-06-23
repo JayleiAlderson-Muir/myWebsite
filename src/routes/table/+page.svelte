@@ -1,11 +1,34 @@
 <script>
   import SvelteTable from "svelte-table";
-
   import { switchData } from "$lib/switchData.js";
+  import { onMount } from "svelte";
+  import { page } from "$app/stores";
+  let rows;
+  if ($page.url.hash) {
+    updateTable();
+  } else {
+    rows = switchData;
+  }
+
+  function updateTable() {
+    if ($page.url.hash !== "#about") {
+      rows = switchData.filter((x) =>
+        $page.url.hash.replace("#", "") === ""
+          ? x
+          : x.Brand == $page.url.hash.replace("#", "")
+      );
+    } else {
+      rows = switchData;
+    }
+  }
+  onMount(async () => {
+    onhashchange = updateTable;
+  });
+
   let sortBy = "Brand";
   let sortOrder = 1;
-  //declate table data and structure
-  const rows = switchData;
+  //declare table data and structure
+
   const columns = [
     {
       key: "Brand",
@@ -43,6 +66,7 @@
     },
   ];
 </script>
+
 <!--create svelte table based on props, attributes-->
 <div class="table">
   <SvelteTable
@@ -58,7 +82,7 @@
 </div>
 
 <style>
-  .row-odd{
+  :global(.row-odd) {
     background-color: white;
   }
   :global(.table td) {
