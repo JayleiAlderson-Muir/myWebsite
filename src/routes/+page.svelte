@@ -1,10 +1,7 @@
 <!-- JS  -->
 <script>
-  import { writable } from "svelte/store";
-  import { switchData, brandImages } from "$lib/switchData.js";
+  import { brandImages } from "$lib/switchData.js";
   import BrandCard from "$lib/brandCard.svelte";
-
-  const switchDataStore = writable(switchData);
 
   let brandList = ["Cherry", "Gateron", "Kailh", "ZealPC", "TTC", "Outemu"];
 </script>

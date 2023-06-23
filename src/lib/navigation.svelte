@@ -5,13 +5,13 @@
 <nav>
   <ul>
     <li>
-      <a class:active={$page.url.pathname === "/"} href="/">Home</a>
+      <a href="#about">About Site</a>
     </li>
     <li>
-      <a class:active={$page.url.pathname.includes("table")} href="/table">Table</a>
+      <a class:active={$page.url.pathname === "/"} href="/">Big Brands</a>
     </li>
     <li>
-      <a href="#about">About</a>
+      <a class:active={$page.url.pathname.includes("table")} href="/table">All Switches</a>
     </li>
   </ul>
 </nav>

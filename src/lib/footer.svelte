@@ -6,7 +6,8 @@
 <!--TODO-->
 <footer id="about">
   <div>
-    <h3>About</h3>
+    <h3>Switching it Up: Your Guide to Mechanical Keyboard Switches</h3>
+    <h4>All the latest data you need. Now in one place.</h4>
     <FadingImage/>
   </div>
 </footer>
@@ -20,6 +21,9 @@
     background-color: var(--secondary-colour);
   }
   h3 {
+    color: var(--text-colour);
+  }
+  h4 {
     color: var(--text-colour);
   }
 </style>

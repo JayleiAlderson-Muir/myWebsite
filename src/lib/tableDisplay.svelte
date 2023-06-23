@@ -1,8 +1,5 @@
 <script>
     import SvelteTable from "svelte-table";
-    import { switchData } from "$lib/switchData.js";
-    import { onMount } from "svelte";
-    import { page } from "$app/stores";
     import { columns } from "$lib/switchData.js";
     
     export let rows;
