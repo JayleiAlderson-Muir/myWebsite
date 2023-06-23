@@ -43,6 +43,14 @@ This is a great beginner guide. I think I want to do something similar but make 
 - SvelteTable has inherit formatting issues that should have been addressed
 - FadingImage component can go out-of-sync and pause for the duration of the setInterval method used
 
+# Next Steps
+- Create an about page. This would help the program in the following ways:
+  1. It would remove the issue caused when visiting the about section while on the filtered table page
+  2. It would allow me to put a lot more information onto the site detailing my goals and explaining certain things in more detail for users
+  3. Another page is just more oppurtunity to include interesting and dynamic code in my program
+- Fixing SvelteTable issues. Styling, formatting, and allowing more options for filtering
+- Add a transition to the Footer's FadingImage component, the reason why it was named thusly
+- Tidy up switchData.js as it pertains to my program
 
 ## Reference Start
 
