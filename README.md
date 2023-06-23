@@ -1,4 +1,4 @@
-## Running the project
+## Running this Project
 
 Once you've cloned the project and installed dependencies with `npm install` and `npm install -save svelte-table`, start a development server:
 
